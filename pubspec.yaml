@@ -1,8 +1,8 @@
 name: music_sync
-description: "A new Flutter plugin project."
+description: "music sync, fft, oltw, position"
 version: 0.0.1
-author: Your Name <your-email@example.com>
-homepage:
+author: adamkim@techfree.kr
+homepage: https://github.com/TechFreeKorea/music_sync
 
 environment:
   sdk: ^3.5.4
@@ -40,8 +40,11 @@ flutter:
     # then add platforms following the instruction here:
     # https://flutter.dev/to/pubspec-plugin-platforms
     # -------------------
-      some_platform:
-        pluginClass: somePluginClass
+      android:
+        package: com.example.music_sync
+        pluginClass: MusicSyncPlugin
+      ios:
+        pluginClass: SwiftMusicSyncPlugin
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:
